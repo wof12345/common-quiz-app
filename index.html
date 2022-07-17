@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="./variables.js"></script>
+    <script defer src="./quizpage.js"></script>
+    <script defer src="./index.js"></script>
+    <script defer src="./quizdata.js"></script>
+  </head>
+
+  <body>
+    <div class="master_container">
+      <div class="inner_container">
+        <div class="MyQuizApp container">
+          <div class="img_quiz">
+            <img src="./Question.svg" alt="" />
+          </div>
+          <div class="text1">
+            <h3>Quiz App With Fixed Time</h3>
+            <p>
+              You can create a quiz or participate in one. Your result will show
+              in top left corner. Use show to view result and start to start the
+              quiz. If the time runs out then quiz will end.
+            </p>
+          </div>
+          <div class="MyBtn">
+            <button class="start" type="button">Start Quiz</button>
+            <button class="make" type="button">Make Quiz</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner_container">
+        <h1>Available quizzes</h1>
+        <div class="available_quizzes"></div>
+      </div>
+    </div>
+
+    <div class="make_give_quiz">
+      <h2></h2>
+      <div class="quiz_container"></div>
+
+      <div class="extra_options">
+        <div class="user_choice">
+          <label for="time">Time limit : (Seconds)</label>
+          <input class="util" type="text" name="time" />
+        </div>
+        <div class="user_choice">
+          <label for="title"> Title </label>
+          <input class="util" type="text" name="title" />
+        </div>
+        <div class="user_choice">
+          <label for="author"> Author </label>
+          <input class="util" type="text" name="author" />
+        </div>
+      </div>
+
+      <div class="utility_btns">
+        <button type="button" class="add">add</button>
+        <button type="button" class="delete">delete</button>
+        <button type="button" class="start_user">start</button>
+        <button type="button" class="show">show</button>
+        <button type="button" class="done">done</button>
+      </div>
+    </div>
+
+    <section class="floating_message window">
+      <p class="floating_message-message">Error</p>
+    </section>
+
+    <section class="userResultPage">
+      <p class="title"></p>
+      <p class="defined_msg"></p>
+      <button class="back">Back</button>
+    </section>
+
+    <!-- <div class="user_choice mcq 0" style="opacity:1;padding: 0; transition:.5s;">
+      <div class="choice_sel"><p>1.</p><p class="ques">34</p></div>
+      <div class="choice_cont">
+      <div class="choice_sel"><input class="choice" type="radio" name="choice0" id="0ques0"  value="3"><p class="choices">3</p></div> -->
+  </body>
+</html>
